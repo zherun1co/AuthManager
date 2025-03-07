@@ -9,7 +9,7 @@ services:
       - TZ=America/Mexico_City
       - KEYCLOAK_CORS=true
       - KC_DB=mssql
-      - KC_DB_URL=jdbc:sqlserver:///azure-server.database.windows.net:1433;database=KeycloakDB;encrypt=true;trustServerCertificate=true;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+      - KC_DB_URL=jdbc:sqlserver://ServerName;database=KeycloakDB;encrypt=false;trustServerCertificate=true;loginTimeout=30;
       - KC_DB_USERNAME=UserName
       - KC_DB_PASSWORD=Password
       - KC_DB_SCHEMA=dbo
